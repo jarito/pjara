@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.code-scan.com/ruleset/1.0.0 https://www.code-scan.com/ruleset_xml_schema.xsd" xsi:noNamespaceSchemaLocation="https://www.code-scan.com/ruleset_xml_schema.xsd" name="All Apex Rules" xmlns="https://www.code-scan.com/ruleset/1.0.0">
+  <description>Default Apex Profile</description>
+  <rule ref="rulesets/apex/strictexception.xml/AvoidThrowingNewInstanceOfSameException" name="AvoidThrowingNewInstanceOfSameException" />
+  <rule ref="rulesets/apex/strictexception.xml/DoNotThrowExceptionInFinally" name="DoNotThrowExceptionInFinally" />
+  <rule ref="rulesets/apex/strictexception.xml/AvoidCatchingThrowable" name="AvoidCatchingThrowable" />
+  <rule ref="rulesets/apex/strictexception.xml/ExceptionAsFlowControl" name="ExceptionAsFlowControl" />
+  <rule ref="rulesets/apex/strictexception.xml/AvoidCatchingNPE" name="AvoidCatchingNPE" />
+  <rule ref="rulesets/apex/strictexception.xml/AvoidRethrowingException" name="AvoidRethrowingException" />
+  <rule ref="rulesets/apex/empty.xml" />
+  <rule ref="rulesets/apex/codesize.xml/CyclomaticComplexity" name="CyclomaticComplexity" />
+  <rule ref="rulesets/apex/codesize.xml/TooManyMethods" name="TooManyMethods" />
+  <rule ref="rulesets/apex/codesize.xml/NPathComplexity" name="NPathComplexity" />
+  <rule ref="rulesets/apex/codesize.xml/ExcessiveMethodLength" name="ExcessiveMethodLength" />
+  <rule ref="rulesets/apex/codesize.xml/ExcessiveParameterList" name="ExcessiveParameterList" />
+  <rule ref="rulesets/apex/codesize.xml/ExcessiveClassLength" name="ExcessiveClassLength" />
+  <rule ref="rulesets/apex/codesize.xml/ExcessivePublicCount" name="ExcessivePublicCount" />
+  <rule ref="rulesets/apex/codesize.xml/TooManyFields" name="TooManyFields" />
+  <rule ref="rulesets/apex/codesize.xml/NcssMethodCount" name="NcssMethodCount">
+    <properties>
+      <property name="minimum" value="50" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/apex/codesize.xml/NcssTypeCount" name="NcssTypeCount">
+    <properties>
+      <property name="minimum" value="800" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/apex/codesize.xml/NcssConstructorCount" name="NcssConstructorCount" />
+  <rule ref="rulesets/apex/design.xml/ReturnEmptyArrayRatherThanNull" name="ReturnEmptyArrayRatherThanNull" />
+  <rule ref="rulesets/apex/design.xml/AbstractClassWithoutAnyMethod" name="AbstractClassWithoutAnyMethod" />
+  <rule ref="rulesets/apex/design.xml/SimplifyBooleanReturns" name="SimplifyBooleanReturns" />
+  <rule ref="rulesets/apex/design.xml/SimplifyBooleanExpressions" name="SimplifyBooleanExpressions" />
+  <rule ref="rulesets/apex/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal" name="ClassWithOnlyPrivateConstructorsShouldBeFinal" />
+  <rule ref="rulesets/apex/design.xml/SingularField" name="SingularField" />
+  <rule ref="rulesets/apex/design.xml/UseSingleton" name="UseSingleton" />
+  <rule ref="rulesets/apex/design.xml/AvoidDeeplyNestedIfStmts" name="AvoidDeeplyNestedIfStmts" />
+  <rule ref="rulesets/apex/design.xml/AvoidReassigningParameters" name="AvoidReassigningParameters" />
+  <rule ref="rulesets/apex/design.xml/ConstructorCallsOverridableMethod" name="ConstructorCallsOverridableMethod" />
+  <rule ref="rulesets/apex/design.xml/AccessorClassGeneration" name="AccessorClassGeneration" />
+  <rule ref="rulesets/apex/design.xml/FinalFieldCouldBeStatic" name="FinalFieldCouldBeStatic" />
+  <rule ref="rulesets/apex/design.xml/NonStaticInitializer" name="NonStaticInitializer" />
+  <rule ref="rulesets/apex/design.xml/EqualsNull" name="EqualsNull" />
+  <rule ref="rulesets/apex/design.xml/ConfusingTernary" name="ConfusingTernary" />
+  <rule ref="rulesets/apex/design.xml/IdempotentOperations" name="IdempotentOperations" />
+  <rule ref="rulesets/apex/design.xml/ImmutableField" name="ImmutableField" />
+  <rule ref="rulesets/apex/design.xml/UseLocaleWithCaseConversions" name="UseLocaleWithCaseConversions" />
+  <rule ref="rulesets/apex/design.xml/AvoidProtectedFieldInFinalClass" name="AvoidProtectedFieldInFinalClass" />
+  <rule ref="rulesets/apex/design.xml/AssignmentToNonFinalStatic" name="AssignmentToNonFinalStatic" />
+  <rule ref="rulesets/apex/design.xml/MissingStaticMethodInNonInstantiatableClass" name="MissingStaticMethodInNonInstantiatableClass" />
+  <rule ref="rulesets/apex/design.xml/AvoidInstanceofChecksInCatchClause" name="AvoidInstanceofChecksInCatchClause" />
+  <rule ref="rulesets/apex/design.xml/AbstractClassWithoutAbstractMethod" name="AbstractClassWithoutAbstractMethod" />
+  <rule ref="rulesets/apex/design.xml/SimplifyConditional" name="SimplifyConditional" />
+  <rule ref="rulesets/apex/design.xml/PositionLiteralsFirstInComparisons" name="PositionLiteralsFirstInComparisons" />
+  <rule ref="rulesets/apex/design.xml/UnnecessaryLocalBeforeReturn" name="UnnecessaryLocalBeforeReturn" />
+  <rule ref="rulesets/apex/design.xml/UncommentedEmptyMethod" name="UncommentedEmptyMethod" />
+  <rule ref="rulesets/apex/design.xml/AvoidConstantsInterface" name="AvoidConstantsInterface" />
+  <rule ref="rulesets/apex/design.xml/PreserveStackTrace" name="PreserveStackTrace" />
+  <rule ref="rulesets/apex/design.xml/UseCollectionIsEmpty" name="UseCollectionIsEmpty" />
+  <rule ref="rulesets/apex/design.xml/EmptyMethodInAbstractClassShouldBeAbstract" name="EmptyMethodInAbstractClassShouldBeAbstract" />
+  <rule ref="rulesets/apex/design.xml/LogicInversion" name="LogicInversion" />
+  <rule ref="rulesets/apex/design.xml/AvoidPublicFields" name="AvoidPublicFields" />
+  <rule ref="rulesets/apex/design.xml/AvoidGlobalModifier" name="AvoidGlobalModifier" />
+  <rule ref="rulesets/apex/design.xml/AvoidNotFinalPublicStaticFields" name="AvoidNotFinalPublicStaticFields" />
+  <rule ref="rulesets/apex/basic.xml/AvoidMultipleUnaryOperators" name="AvoidMultipleUnaryOperators" />
+  <rule ref="rulesets/apex/basic.xml/JumbledIncrementer" name="JumbledIncrementer" />
+  <rule ref="rulesets/apex/basic.xml/ForLoopShouldBeWhileLoop" name="ForLoopShouldBeWhileLoop" />
+  <rule ref="rulesets/apex/basic.xml/ReturnFromFinallyBlock" name="ReturnFromFinallyBlock" />
+  <rule ref="rulesets/apex/basic.xml/UnconditionalIfStatement" name="UnconditionalIfStatement" />
+  <rule ref="rulesets/apex/basic.xml/CollapsibleIfStatements" name="CollapsibleIfStatements" />
+  <rule ref="rulesets/apex/basic.xml/MisplacedNullCheck" name="MisplacedNullCheck" />
+  <rule ref="rulesets/apex/basic.xml/BrokenNullCheck" name="BrokenNullCheck" />
+  <rule ref="rulesets/apex/basic.xml/AvoidUsingHardCodedId" name="AvoidUsingHardCodedId" />
+  <rule ref="rulesets/apex/basic.xml/AvoidUsingHardCodedIP" name="AvoidUsingHardCodedIP" />
+  <rule ref="rulesets/apex/basic.xml/AvoidBranchingStatementAsLastInLoop" name="AvoidBranchingStatementAsLastInLoop" />
+  <rule ref="rulesets/apex/basic.xml/AvoidLogicInTrigger" name="AvoidLogicInTrigger" />
+  <rule ref="rulesets/apex/controversial.xml/AssignmentInOperand" name="AssignmentInOperand" />
+  <rule ref="rulesets/apex/controversial.xml/CallSuperTwiceInConstructor" name="CallSuperTwiceInConstructor" />
+  <rule ref="rulesets/apex/optimizations.xml" />
+  <rule ref="rulesets/apex/naming.xml" />
+  <rule ref="rulesets/apex/unusedcode.xml" />
+  <rule ref="rulesets/apex/coupling.xml" />
+  <rule ref="rulesets/apex/unnecessary.xml" />
+  <rule ref="rulesets/apex/sunsecure.xml" />
+  <rule ref="rulesets/apex/strings.xml" />
+  <rule ref="rulesets/apex/apex.xml/SystemDebug" name="SystemDebug">
+    <properties>
+      <property name="strict" value="false" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/apex/apex.xml/DirectAccessToTriggerArray" name="DirectAccessToTriggerArray" />
+  <rule ref="rulesets/apex/braces.xml" />
+  <rule ref="rulesets/apex/comments.xml/CommentSize" name="CommentSize">
+    <properties>
+      <property name="maxLines" value="60" />
+      <property name="maxLineLength" value="150" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/apex/comments.xml/CommentContent" name="CommentContent">
+    <properties>
+      <property name="disallowedTerms" value="idiot|jerk" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/apex/unittests.xml/ClassWithoutTestCases" name="ClassWithoutTestCases" />
+  <rule ref="rulesets/apex/unittests.xml/NonUnitTestContainsAsserts" name="NonUnitTestContainsAsserts" />
+  <rule ref="rulesets/apex/unittests.xml/TestClassWithoutTestCases" name="TestClassWithoutTestCases" />
+  <rule ref="rulesets/apex/unittests.xml/UnitTestsShouldIncludeAssert" name="UnitTestsShouldIncludeAssert" />
+  <rule ref="rulesets/apex/unittests.xml/UnnecessaryBooleanAssertion" name="UnnecessaryBooleanAssertion" />
+  <rule ref="rulesets/apex/unittests.xml/UseAnnotationOnTestClass" name="UseAnnotationOnTestClass" />
+  <rule ref="rulesets/apex/unittests.xml/AvoidUsingSeeAllData" name="AvoidUsingSeeAllData" />
+  <rule ref="rulesets/apex/security.xml/DMLWithoutSharingEnabled" name="DMLWithoutSharingEnabled" />
+  <rule ref="rulesets/apex/security.xml/AvoidHardCodedCredential" name="AvoidHardCodedCredential" />
+  <rule ref="rulesets/apex/security.xml/BadCrypto" name="BadCrypto" />
+  <rule ref="rulesets/apex/security.xml/InsecureEndpoint" name="InsecureEndpoint" />
+  <rule ref="rulesets/apex/security.xml/OpenRedirect" name="OpenRedirect" />
+  <rule ref="rulesets/apex/security.xml/SOQLInjection" name="SOQLInjection" />
+  <rule ref="rulesets/apex/security.xml/UnescapedOutput" name="UnescapedOutput" />
+  <rule ref="rulesets/apex/security.xml/UnescapedSource" name="UnescapedSource" />
+</ruleset>
